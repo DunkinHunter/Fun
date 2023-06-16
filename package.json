@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend"
   },
   "author": "Nix",
   "license": "MIT",
@@ -19,6 +20,8 @@
     "mongoose": "^7.2.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.0",
     "nodemon": "^2.0.22"
   }
 }
